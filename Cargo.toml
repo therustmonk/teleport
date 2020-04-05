@@ -1,0 +1,20 @@
+[package]
+name = "teleport"
+version = "0.1.0"
+authors = ["Denis Kolodin <deniskolodin@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/DenisKolodin/teleport"
+homepage = "https://github.com/DenisKolodin/teleport"
+documentation = "https://docs.rs/teleport/"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["logging", "log", "logger"]
+categories = ["development-tools::debugging"]
+description = "Logs collector for Rust with interactive Web-UI"
+
+[dependencies]
+anyhow = "1.0.28"
+env_logger = "0.7.1"
+log = "0.4.8"
+meio = "0.7.0"
+tokio = { version = "0.2.16", features = ["full"] }
