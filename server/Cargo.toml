@@ -1,0 +1,40 @@
+[package]
+name = "teleport-server"
+version = "0.1.0"
+authors = ["Denis Kolodin <deniskolodin@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/DenisKolodin/teleport"
+homepage = "https://github.com/DenisKolodin/teleport"
+documentation = "https://docs.rs/teleport/"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["logging", "log", "logger"]
+categories = ["development-tools::debugging"]
+description = "Logs collector for Rust with interactive Web-UI"
+
+[dependencies]
+anyhow = "1.0.28"
+async-trait = "0.1.30"
+env_logger = "0.7.1"
+flate2 = "1.0.14"
+futures = "0.3.4"
+headers = "0.3.2"
+log = "0.4.8"
+meio = "0.7.0"
+mime_guess = "2.0.3"
+serde = "1.0.106"
+serde_json = "1.0.51"
+tar = "0.4.26"
+thiserror = "1.0.14"
+tokio = { version = "0.2.16", features = ["full"] }
+warp = "0.2.2"
+
+[dependencies.protocol]
+package = "teleport-protocol"
+version = "0.1.0"
+path = "../protocol"
+
+[build-dependencies]
+anyhow = "1.0.28"
+async-trait = "0.1.30"
+tokio = { version = "0.2.16", features = ["full"] }

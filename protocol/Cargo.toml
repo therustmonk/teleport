@@ -1,0 +1,12 @@
+[package]
+name = "teleport-protocol"
+version = "0.1.0"
+authors = ["Denis Kolodin <deniskolodin@gmail.com>"]
+edition = "2018"
+
+[features]
+default = []
+sorted = []
+
+[dependencies]
+serde = { version = "1.0.106", features = ["derive"] }

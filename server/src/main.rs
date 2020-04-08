@@ -1,3 +1,5 @@
+mod server;
+
 use anyhow::Error;
 
 #[tokio::main]
